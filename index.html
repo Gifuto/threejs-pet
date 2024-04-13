@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>My first three.js app</title>
+		<style>
+			body {
+				margin: 0;
+			}
+			/* button {
+                position: absolute;
+            } */
+			#ui {
+				position: relative;
+			}
+            .uiChild {
+                position: absolute;
+            }
+            #leftUI {
+                left: 0;
+            }
+            #rightUI {
+                right: 0;
+            }
+		</style>
+	</head>
+	<body>
+		<div id="ui">
+			<div id="leftUI" class="uiChild">
+				<button id="addBtn">add model</button>
+				<button id="removeBtn">remove</button>
+				<button id="attachBtn">attach</button>
+				<button id="detachBtn">detach</button>
+			</div>
+			<div id="rightUI" class="uiChild">
+                <button id="translateBtn">TRANSLATE</button>
+				<button id="rotateBtn">ROTATE</button>
+				<button id="scaleBtn">SCALE</button>
+            </div>
+		</div>
+		<script type="module" src="main.js"></script>
+	</body>
+</html>
